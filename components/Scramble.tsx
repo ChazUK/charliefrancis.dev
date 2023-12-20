@@ -30,5 +30,9 @@ export default function Scramble({ lines, pause }: Props) {
     },
   });
 
-  return <p className="text-6xl" ref={ref}></p>;
+  return (
+    <p className="text-4xl md:text-6xl" ref={ref}>
+      &nbsp;
+    </p>
+  );
 }
