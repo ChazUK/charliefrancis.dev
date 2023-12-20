@@ -17,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx("", rubikMonoOne.className)}>{children}</body>
+      <body className={clsx("overflow-hidden", rubikMonoOne.className)}>
+        {children}
+      </body>
     </html>
   );
 }
