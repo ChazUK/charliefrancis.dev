@@ -5,10 +5,26 @@ import "./globals.css";
 
 const rubikMonoOne = Rubik_Mono_One({ weight: "400", subsets: ["latin"] });
 
+const siteName = "Charlie Francis";
+const siteUrl = "https://www.charliefrancis.dev";
+const description =
+  "Charlie Francis is a freelance developer, engineer and creative technologist based in London, UK with a stong passion for all things technology.";
+
 export const metadata: Metadata = {
-  title: "Charlie Francis",
-  description:
-    "Charlie Francis is a freelance developer, engineer and creative technologist based in London, UK with a stong passion for all things technology.",
+  title: siteName,
+  description,
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title: siteName,
+    description,
+    siteName,
+    images: [
+      {
+        url: `${siteUrl}/social-card.jpg`,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
